@@ -1,0 +1,20 @@
+{
+  "name": "eagarts-testing",
+  "version": "1.0.0",
+  "description": "EAGArts with TestCafe",
+  "main": "index.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome ./tests -s takeOnFails=true --disable-page-caching",
+    "test:percy": "percy exec -- testcafe chrome ./tests -s takeOnFails=true --disable-page-caching"
+  },
+  "keywords": [
+    "TestCafe",
+    "EAGArts"
+  ],
+  "author": "Yordani Chubrevich",
+  "license": "ISC",
+  "dependencies": {
+    "@percy/testcafe": "^0.2.0",
+    "testcafe": "^1.8.8"
+  }
+}
